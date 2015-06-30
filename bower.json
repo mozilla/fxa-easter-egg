@@ -1,0 +1,27 @@
+{
+  "name": "easterEgg",
+  "main": "easterEgg.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mozilla/fxa-easter-egg",
+  "authors": [
+    "Sai Pc"
+  ],
+  "description": "Easter Egg for Cloud Services",
+  "keywords": [
+    "Easter",
+    "Egg"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "mocha": "2.2.5",
+    "chai": "3.2.0",
+    "sinon": "1.15.4"
+  }
+}
