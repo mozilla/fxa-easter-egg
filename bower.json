@@ -1,17 +1,17 @@
 {
-  "name": "easterEgg",
-  "main": "easterEgg.js",
-  "version": "0.0.1",
+  "name": "fxa-easter-egg",
+  "main": "src/easterEgg.js",
+  "version": "0.0.2",
   "homepage": "https://github.com/mozilla/fxa-easter-egg",
   "authors": [
     "Sai Pc"
   ],
-  "description": "Easter Egg for Cloud Services",
+  "description": "Easter Egg for Mozilla Cloud Services",
   "keywords": [
     "Easter",
     "Egg"
   ],
-  "license": "MIT",
+  "license": "MPL-2.0",
   "ignore": [
     "**/.*",
     "node_modules",

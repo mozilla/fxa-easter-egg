@@ -1,0 +1,31 @@
+{
+  "name": "easterEgg",
+  "version": "1.0.0",
+  "description": "Easter Egg for Mozilla Cloud Services",
+  "main": "src/easterEgg.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "eslint": "0.24.1",
+    "eslint-config-fxa": "1.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mozilla/fxa-easter-egg.git"
+  },
+  "keywords": [
+    "Easter",
+    "Egg"
+  ],
+  "author": "Sai Pc",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/mozilla/fxa-easter-egg/issues"
+  },
+  "homepage": "https://github.com/mozilla/fxa-easter-egg"
+}
