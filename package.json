@@ -6,13 +6,13 @@
   "directories": {
     "test": "tests"
   },
-  "dependencies": {
+  "devDependencies": {
     "eslint": "0.24.1",
     "eslint-config-fxa": "1.8.1"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",

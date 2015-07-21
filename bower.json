@@ -1,6 +1,6 @@
 {
   "name": "fxa-easter-egg",
-  "main": "src/easterEgg.js",
+  "main": "src/easteregg.js",
   "version": "0.0.2",
   "homepage": "https://github.com/mozilla/fxa-easter-egg",
   "authors": [
