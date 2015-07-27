@@ -1,6 +1,6 @@
 var assert = chai.assert;
 describe('EasterEgg', function(){
-  var STORAGE_NAMESPACE = 'Easter Egg for Cloud Services';
+  var STORAGE_NAMESPACE = easterEgg.STORAGE_NAMESPACE;
   beforeEach(function(){
     localStorage.clear();
   });
