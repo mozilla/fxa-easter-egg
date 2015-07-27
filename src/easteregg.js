@@ -3,6 +3,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 var easterEgg = (function (easterEgg) {
+  /*eslint no-undef: 0 */
   'use strict';
   var STORAGE_NAMESPACE = 'Easter Egg for Cloud Services';
   easterEgg.enableEasterEgg = function (windowMock) {
