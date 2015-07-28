@@ -15,8 +15,8 @@ notifications:
     skip_join: false
 
 before_install:
-  # Update npm to 2.4
-  - npm install -g npm@2.4
+  # Update npm to 2.x
+  - npm install -g npm@2
 
 install:
   - travis_retry npm install --silent
