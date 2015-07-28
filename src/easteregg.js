@@ -5,7 +5,8 @@
 var easterEgg = (function (easterEgg) {
   /*eslint no-undef: 0 */
   'use strict';
-  var STORAGE_NAMESPACE = 'Easter Egg for Cloud Services';
+  var STORAGE_NAMESPACE = '__cs_easteregg__';
+  easterEgg.STORAGE_NAMESPACE = STORAGE_NAMESPACE;
   easterEgg.enableEasterEgg = function (windowMock) {
     var win = windowMock || window;
     try {

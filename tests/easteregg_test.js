@@ -26,7 +26,7 @@ var assert = chai.assert;
   };
 
   describe('EasterEgg', function(){
-    var STORAGE_NAMESPACE = 'Easter Egg for Cloud Services';
+    var STORAGE_NAMESPACE = easterEgg.STORAGE_NAMESPACE;
     describe('#enableEasterEgg()', function(){
       // clear storage before every test, as otherwise the order of tests would matter
       beforeEach(function() {
