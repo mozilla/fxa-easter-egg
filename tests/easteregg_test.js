@@ -25,12 +25,18 @@ var assert = chai.assert;
     }
   };
 
+  function resetWindow() {
+    window.localStorage.clear();
+    window.self = window;
+    window.top = window.self;
+  }
+
   describe('EasterEgg', function(){
     var STORAGE_NAMESPACE = easterEgg.STORAGE_NAMESPACE;
     describe('#enableEasterEgg()', function(){
-      // clear storage before every test, as otherwise the order of tests would matter
+      // reset state before every test, as otherwise the order of tests would matter
       beforeEach(function() {
-        window.localStorage.clear();
+        resetWindow();
       });
 
       it('should return true when the easter egg is set', function(){
@@ -45,9 +51,9 @@ var assert = chai.assert;
     });
 
     describe('#disableEasterEgg()', function(){
-      // clear storage before every test, as otherwise the order of tests would matter
+      // reset state before every test, as otherwise the order of tests would matter
       beforeEach(function() {
-        window.localStorage.clear();
+        resetWindow();
       });
 
       it('should return false when the easter egg is disabled', function(){
@@ -61,8 +67,18 @@ var assert = chai.assert;
     });
 
     describe('#shouldShowEasterEgg()', function(){
+      // reset state before every test, as otherwise the order of tests would matter
+      beforeEach(function() {
+        resetWindow();
+      });
+
       it('should return a boolean', function(){
         assert.isBoolean(easterEgg.shouldShowEasterEgg(window));
+      });
+
+      it('should return false when not in top-level window', function(){
+        window.self = {};
+        assert.equal(false, easterEgg.shouldShowEasterEgg(window));
       });
     });
   });

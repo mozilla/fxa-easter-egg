@@ -3,6 +3,7 @@ describe('EasterEgg', function(){
   var STORAGE_NAMESPACE = easterEgg.STORAGE_NAMESPACE;
   beforeEach(function(){
     localStorage.clear();
+    window.self = window;
   });
 
   describe('#enableEasterEgg()', function(){
@@ -30,6 +31,10 @@ describe('EasterEgg', function(){
   describe('#shouldShowEasterEgg()', function(){
     it('should return a boolean', function(){
       assert.isBoolean(easterEgg.shouldShowEasterEgg());
+    });
+    it('should return false when not in top-level window', function(){
+      window.self = {};
+      assert.equal(false, easterEgg.shouldShowEasterEgg());
     });
   });
 });
