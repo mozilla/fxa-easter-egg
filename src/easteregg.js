@@ -25,6 +25,10 @@ var easterEgg = (function (easterEgg) {
   };
   easterEgg.shouldShowEasterEgg = function (windowMock) {
     var win = windowMock || window;
+    // Don't show in contexts where `easterEgg.disableEasterEgg()` wont work.
+    if (win.top !== win.self) {
+      return false;
+    }
     try {
       return (win.localStorage.getItem(STORAGE_NAMESPACE) !== 'false');
     } catch (e) {
